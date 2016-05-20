@@ -32,6 +32,7 @@ gem 'routing-filter'
 gem 'rollbar'
 gem 'newrelic_rpm'
 gem 'tzinfo-data'
+gem 'responders'
 
 group :development, :test do
   gem 'rspec-rails'
