@@ -6,7 +6,7 @@ class Home::HomeController < Home::BaseController
     elsif current_user.current_block
       @card = current_user.current_block.cards.pending.first
       @card ||= current_user.current_block.cards.repeating.first
-    elsif
+    else
       @card = current_user.cards.pending.first
       @card ||= current_user.cards.repeating.first
     end
