@@ -55,12 +55,13 @@ en:
   want_delete_record: 'Do you want to delete the record?'
   choose_locale: 'Choose locale'
   locale: 'Locale'
+  review: 'Review'
 
   activerecord:
-      errors:
-        messages:
-          blank: 'Fill out the field.'
-          too_short: 'Short value.'
-          confirmation: 'Values do not match.'
-          taken: 'Not a unique value.'
-          invalid: 'Invalid format.'
+    errors:
+      messages:
+        blank: 'Fill out the field.'
+        too_short: 'Short value.'
+        confirmation: 'Values do not match.'
+        taken: 'Not a unique value.'
+        invalid: 'Invalid format.'

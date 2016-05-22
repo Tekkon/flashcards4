@@ -55,6 +55,7 @@ ru:
   want_delete_record: 'Удалить запись?'
   choose_locale: 'Выберите локаль'
   locale: 'Локаль'
+  review: 'Пересмотр'
 
   activerecord:
     errors:
