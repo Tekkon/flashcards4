@@ -18,6 +18,7 @@ en:
   all_cards_label: 'All cards'
   add_card_label: 'Add card'
   user_profile_label: 'User profile'
+  profile: 'Profile'
   delete_user_label: 'Delete user'
   log_out_label: 'Log out'
   user_created_successfully_notice: 'User created successfully.'
@@ -36,11 +37,31 @@ en:
   log_out_is_successful_notice: 'Log out is successful.'
   log_out_failed_provider_alert: "Log out of your account %{provider} failed."
   please_log_in: 'Please log in.'
+  watch_cards: 'Watch cards'
+  name: 'Name'
+  make_usual: 'Make usual'
+  make_current: 'Make current'
+  edit: 'Edit'
+  delete: 'Delete'
+  add_deck: 'Add deck'
+  image: 'Image'
+  choose_deck: 'Choose the deck'
+  decks: 'Decks'
+  delete_image: 'Delete the image'
+  save: 'Save'
+  edit_card: 'Edit card'
+  edit_deck: 'Edit deck'
+  want_delete_deck: 'Do you want to delete the deck?'
+  want_delete_record: 'Do you want to delete the record?'
+  choose_locale: 'Choose locale'
+  locale: 'Locale'
+  review: 'Review'
 
   activerecord:
-      errors:
-        messages:
-          blank: 'Fill out the field.'
-          too_short: 'Short value.'
-          confirmation: 'Values do not match.'
-          taken: 'Not a unique value.'
+    errors:
+      messages:
+        blank: 'Fill out the field.'
+        too_short: 'Short value.'
+        confirmation: 'Values do not match.'
+        taken: 'Not a unique value.'
+        invalid: 'Invalid format.'
