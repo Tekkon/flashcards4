@@ -2,4 +2,4 @@
 cd /vagrant
 bundle install
 rake db:migrate
-rails s thin
+thin start -p 3000
