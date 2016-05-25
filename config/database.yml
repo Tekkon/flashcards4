@@ -1,0 +1,10 @@
+development:
+  adapter: postgresql
+  database: flashcards
+  username: vagrant
+  password: vagrant
+
+test:
+  adapter: postgresql
+  database: flashcards
+  username: postgres
