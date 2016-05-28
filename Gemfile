@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.3.0'
+ruby '2.1.8'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
@@ -34,7 +34,7 @@ gem 'newrelic_rpm'
 gem 'tzinfo-data'
 gem 'responders'
 gem 'thin'
-#gem 'vagrant-vbguest'
+gem 'rolify'
 
 group :development, :test do
   gem 'rspec-rails'
