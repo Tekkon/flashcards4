@@ -33,4 +33,6 @@ Rails.application.routes.draw do
     get 'profile/:id/edit' => 'profile#edit', as: :edit_profile
     put 'profile/:id' => 'profile#update', as: :profile
   end
+
+  get 'admin' => 'admin#show', as: :admin
 end

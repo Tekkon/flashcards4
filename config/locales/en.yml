@@ -56,6 +56,7 @@ en:
   choose_locale: 'Choose locale'
   locale: 'Locale'
   review: 'Review'
+  welcome_admin: 'Welcome to admin page!'
 
   activerecord:
     errors:

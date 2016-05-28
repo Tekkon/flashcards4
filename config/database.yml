@@ -1,8 +1,7 @@
 development:
   adapter: postgresql
   database: flashcards
-  username: vagrant
-  password: vagrant
+  username: postgres
 
 test:
   adapter: postgresql

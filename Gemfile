@@ -35,6 +35,7 @@ gem 'tzinfo-data'
 gem 'responders'
 gem 'thin'
 gem 'rolify'
+gem 'pundit'
 
 group :development, :test do
   gem 'rspec-rails'
