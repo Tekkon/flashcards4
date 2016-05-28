@@ -11,7 +11,7 @@
 require 'nokogiri'
 require 'open-uri'
 
-doc = Nokogiri::HTML(open('http://www.learnathome.ru/blog/100-beautiful-words'))
+doc = Nokogiri::HTML(open('https://www.learnathome.ru/blog/100-beautiful-words'))
 
 doc.search('//table/tbody/tr').each do |row|
   original = row.search('td[2]/p')[0].content.downcase
