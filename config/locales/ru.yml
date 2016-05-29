@@ -56,6 +56,7 @@ ru:
   choose_locale: 'Выберите локаль'
   locale: 'Локаль'
   review: 'Пересмотр'
+  welcome_admin: 'Добро пожаловать в админку'
 
   activerecord:
     errors:

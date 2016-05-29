@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.3.0'
+ruby '2.1.8'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
@@ -9,6 +9,7 @@ gem 'pg'
 gem 'sass-rails', '~> 4.0.3'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
+gem 'coffee-script-source', '1.8.0'
 
 gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
@@ -34,7 +35,10 @@ gem 'newrelic_rpm'
 gem 'tzinfo-data'
 gem 'responders'
 gem 'thin'
-#gem 'vagrant-vbguest'
+gem 'rolify'
+gem 'pundit'
+gem 'rails_admin'
+gem "rails_admin_pundit", :github => "sudosu/rails_admin_pundit"
 
 group :development, :test do
   gem 'rspec-rails'
