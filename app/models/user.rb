@@ -34,6 +34,10 @@ class User < ActiveRecord::Base
     update_attribute(:current_block_id, nil)
   end
 
+  def admin?
+    self.has_role? :admin
+  end
+
   private
 
   def set_default_locale
