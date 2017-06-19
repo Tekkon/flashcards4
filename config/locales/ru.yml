@@ -57,6 +57,8 @@ ru:
   locale: 'Локаль'
   review: 'Пересмотр'
   welcome_admin: 'Добро пожаловать в админку'
+  find_in_flickr: 'Найти во Flickr'
+  load_from_flickr: 'Загрузить из Flickr'
 
   activerecord:
     errors:

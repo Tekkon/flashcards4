@@ -57,6 +57,8 @@ en:
   locale: 'Locale'
   review: 'Review'
   welcome_admin: 'Welcome to admin page!'
+  find_in_flickr: 'Find in Flickr'
+  load_from_flickr: 'Load from Flickr'
 
   activerecord:
     errors:

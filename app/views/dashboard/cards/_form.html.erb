@@ -1,4 +1,4 @@
-<%= simple_form_for card do |f| %>
+<%= simple_form_for card, html: { multipart: true } do |f| %>
   <div class="form-group">
     <%= f.input :original_text,  as: :text, label: t(:original_text_label),
                 input_html: { class: 'form-control', required: true,
@@ -11,9 +11,18 @@
   </div>
 
   <div class="form-group">
-    <%= f.input :image, as: :file, label: t(:image) %>
-    <%= f.input :image_cache, as: :hidden %>
+    <div id="image-field">
+      <%= f.input :image, as: :file, label: t(:image) %>
+      <br/>
+      <%= button_tag type: 'button', onclick: "show_flickr()" do %>
+        <%= t(:load_from_flickr) %>
+      <% end %>
+      <%= f.input :image_cache, as: :hidden %> 
+    </div>     
   </div>
+
+  <div id="photos" class="flickr">
+  </div>    
 
   <div class="form-group">
     <%= f.input :block_id, collection: current_user.blocks.all.order('title'),
@@ -34,5 +43,40 @@
     </div>
   <% end %>
 
+  <% if card.remote_image? %>
+    <div class="form-group">
+      <%= f.input :remove_image, as: :boolean, label: t(:delete_image) %>
+      <div class="row">
+        <div class="col-xs-6 col-md-4 card_image">
+          <p class="thumbnail">
+            <%= image_tag card.remote_image %>
+          </p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+
   <%= f.button :submit, t(:save), class: 'btn btn-default' %>
 <% end %>
+
+<script>
+    function show_flickr() {
+      html = ['<%= label_tag :remote_image, t(:image) %><br/>',
+              '<%= text_field_tag "flickr_text" %><%= button_tag type: "button", onclick: "load_flickr()" do %><%= t(:find_in_flickr) %><% end %>'].join('');
+
+      $("#image-field").html(html);
+    }
+
+    function load_flickr() {
+      var text = document.getElementById('flickr_text').value;
+
+      html = ['<select name="card[remote_image]" id="card_remote_image" class="image-picker"><% photos_search(' + text + ').each do |row| %>',
+              '<optgroup label=""><% row.each do |p| %>',
+              '<option data-img-src="<%= p.source %>" value="<%= p.source %>"></option><% end %>',
+              '</optgroup><% end %>',
+              '</select>'].join('');
+
+      $("#photos").html(html);
+      $(".image-picker").imagepicker();
+    }
+</script>

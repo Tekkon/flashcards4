@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.1.8'
+ruby '2.2.4'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
@@ -15,7 +15,7 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
-gem 'rake'
+gem 'rake', '~> 12.0.0'
 gem 'simple_form'
 gem 'nokogiri'
 gem 'seedbank'
@@ -39,6 +39,8 @@ gem 'rolify'
 gem 'pundit'
 gem 'rails_admin'
 gem "rails_admin_pundit", :github => "sudosu/rails_admin_pundit"
+gem 'flickr.rb'
+gem 'image-picker-rails'
 
 group :development, :test do
   gem 'rspec-rails'

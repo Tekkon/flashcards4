@@ -1,6 +1,8 @@
 class Dashboard::CardsController < Dashboard::BaseController
   before_action :set_card, only: [:destroy, :edit, :update]
 
+  include FlickrHelper
+
   def index
     @cards = current_user.cards.all.order('review_date')
   end

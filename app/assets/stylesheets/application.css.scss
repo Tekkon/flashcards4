@@ -13,6 +13,7 @@
  *
  *= require_tree .
  *= require_self
+ *= require image-picker
  */
 
 @import 'bootstrap';
@@ -35,4 +36,18 @@
 
 .block_user_current_block_id {
   margin-left: 20px;
+}
+
+.flickr ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.thumbnails li img{
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    padding: 0;
 }
